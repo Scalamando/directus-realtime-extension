@@ -267,11 +267,11 @@ module.exports = {
         await knex.raw(`
         DELETE FROM public.directus_collections
         WHERE collection='${CHANNEL_TABLE}';
-        
-        DELETE FROM public.directus_fields 
+
+        DELETE FROM public.directus_fields
         WHERE collection = '${CHANNEL_TABLE}';
-        
+
         DELETE FROM public.directus_migrations
-        WHERE version = '010120222RT';`);
+        WHERE version = '20220101A';`);
     },
 };
